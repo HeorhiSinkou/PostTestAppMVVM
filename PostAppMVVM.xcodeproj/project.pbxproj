@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED11F9ED26B9945B0061F2B4 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9EC26B9945B0061F2B4 /* CoreDataStackTests.swift */; };
+		ED11F9EF26B994D40061F2B4 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9EE26B994D40061F2B4 /* TestHelpers.swift */; };
 		ED6008C426B8410100ACBEE1 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */; };
 		ED6008C726B8414200ACBEE1 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C626B8414200ACBEE1 /* Feedback.swift */; };
 		ED6008C926B8421000ACBEE1 /* PostListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */; };
@@ -100,6 +102,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED11F9EC26B9945B0061F2B4 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
+		ED11F9EE26B994D40061F2B4 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		ED6008C626B8414200ACBEE1 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -206,6 +210,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED11F9EB26B9943C0061F2B4 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				ED11F9EC26B9945B0061F2B4 /* CoreDataStackTests.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		ED6008C526B8412D00ACBEE1 /* BaseElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,8 +433,10 @@
 		ED6447C526B7BBBC00403A4C /* PostAppMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED11F9EB26B9943C0061F2B4 /* Persistence */,
 				ED6447C626B7BBBC00403A4C /* PostAppMVVMTests.swift */,
 				ED6447C826B7BBBC00403A4C /* Info.plist */,
+				ED11F9EE26B994D40061F2B4 /* TestHelpers.swift */,
 			);
 			path = PostAppMVVMTests;
 			sourceTree = "<group>";
@@ -741,6 +755,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED6447C726B7BBBC00403A4C /* PostAppMVVMTests.swift in Sources */,
+				ED11F9ED26B9945B0061F2B4 /* CoreDataStackTests.swift in Sources */,
+				ED11F9EF26B994D40061F2B4 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
