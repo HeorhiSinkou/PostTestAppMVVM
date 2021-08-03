@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressMO" representedClassName="AddressMO" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="street" optional="YES" attributeType="String"/>
+        <attribute name="suite" optional="YES" attributeType="String"/>
+        <attribute name="zipcode" optional="YES" attributeType="String"/>
+        <relationship name="geo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GeoMO" inverseName="adress" inverseEntity="GeoMO"/>
+        <relationship name="userInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfoMO" inverseName="address" inverseEntity="UserInfoMO"/>
+    </entity>
+    <entity name="CompanyMO" representedClassName="CompanyMO" syncable="YES">
+        <attribute name="bs" optional="YES" attributeType="String"/>
+        <attribute name="catchPhrase" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="userInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfoMO" inverseName="company" inverseEntity="UserInfoMO"/>
+    </entity>
+    <entity name="FullPostMO" representedClassName="FullPostMO" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="userInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfoMO" inverseName="fullPost" inverseEntity="UserInfoMO"/>
+    </entity>
+    <entity name="GeoMO" representedClassName="GeoMO" syncable="YES">
+        <attribute name="lat" optional="YES" attributeType="String"/>
+        <attribute name="lng" optional="YES" attributeType="String"/>
+        <relationship name="adress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AddressMO" inverseName="geo" inverseEntity="AddressMO"/>
+    </entity>
+    <entity name="UserInfoMO" representedClassName="UserInfoMO" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AddressMO" inverseName="userInfo" inverseEntity="AddressMO"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CompanyMO" inverseName="userInfo" inverseEntity="CompanyMO"/>
+        <relationship name="fullPost" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FullPostMO" inverseName="userInfo" inverseEntity="FullPostMO"/>
+    </entity>
+    <elements>
+        <element name="AddressMO" positionX="-381.3984375" positionY="-227.5703125" width="128" height="119"/>
+        <element name="CompanyMO" positionX="-439.3125" positionY="-344.9140625" width="128" height="89"/>
+        <element name="FullPostMO" positionX="-1030.6640625" positionY="-396.7578125" width="128" height="104"/>
+        <element name="GeoMO" positionX="-61.01171875" positionY="-47.67578125" width="128" height="74"/>
+        <element name="UserInfoMO" positionX="-732.125" positionY="-354.203125" width="128" height="164"/>
+    </elements>
+</model>
