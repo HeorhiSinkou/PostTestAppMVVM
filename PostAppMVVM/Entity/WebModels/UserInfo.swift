@@ -36,3 +36,16 @@ struct UserInfo: Codable, Equatable {
     let website: String?
     let company: Company?
 }
+
+extension UserInfo {
+    static var mockUser: UserInfo {
+        UserInfo(id: 1,
+                 name: "Test name",
+                 username: "Test username",
+                 email: "test@test.com",
+                 address: nil,
+                 phone: "+1234567",
+                 website: nil,
+                 company: nil)
+    }
+}

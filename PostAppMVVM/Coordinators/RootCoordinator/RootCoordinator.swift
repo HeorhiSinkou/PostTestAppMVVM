@@ -15,12 +15,10 @@ class RootCoordinator: ObservableObject {
     @Published var postCoordinator: PostCoordinator!
     @Published var openedURL: URL?
     private(set) var container: DIContainer
-    private let isRunningTests: Bool
 
     // MARK: Initialization
 
     init() {
-        self.isRunningTests = ProcessInfo.processInfo.isRunningTests
         let environment = AppEnvironment.bootstrap()
         self.container = environment.container
         self.postCoordinator = .init(title: "Posts",

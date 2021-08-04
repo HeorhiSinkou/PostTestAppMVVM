@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		ED11F9ED26B9945B0061F2B4 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9EC26B9945B0061F2B4 /* CoreDataStackTests.swift */; };
 		ED11F9EF26B994D40061F2B4 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9EE26B994D40061F2B4 /* TestHelpers.swift */; };
+		ED11F9F226BA584E0061F2B4 /* LazyListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9F126BA584E0061F2B4 /* LazyListTests.swift */; };
+		ED11F9F426BA58BC0061F2B4 /* HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9F326BA58BC0061F2B4 /* HelpersTests.swift */; };
+		ED11F9F626BA58F90061F2B4 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9F526BA58F90061F2B4 /* Result+Extension.swift */; };
+		ED11F9F926BA597D0061F2B4 /* MockedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9F826BA597D0061F2B4 /* MockedResponse.swift */; };
+		ED11F9FB26BA59910061F2B4 /* MockingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9FA26BA59910061F2B4 /* MockingRequest.swift */; };
+		ED11F9FE26BA5B0E0061F2B4 /* WebPostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9FD26BA5B0E0061F2B4 /* WebPostRepositoryTests.swift */; };
+		ED11FA0026BA5E980061F2B4 /* DBPostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9FF26BA5E980061F2B4 /* DBPostRepositoryTests.swift */; };
+		ED11FA0326BA5EEE0061F2B4 /* MockedPersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0226BA5EEE0061F2B4 /* MockedPersistentStore.swift */; };
+		ED11FA0526BA5F1E0061F2B4 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0426BA5F1E0061F2B4 /* Mock.swift */; };
 		ED6008C426B8410100ACBEE1 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */; };
 		ED6008C726B8414200ACBEE1 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C626B8414200ACBEE1 /* Feedback.swift */; };
 		ED6008C926B8421000ACBEE1 /* PostListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */; };
@@ -104,6 +113,15 @@
 /* Begin PBXFileReference section */
 		ED11F9EC26B9945B0061F2B4 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
 		ED11F9EE26B994D40061F2B4 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		ED11F9F126BA584E0061F2B4 /* LazyListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyListTests.swift; sourceTree = "<group>"; };
+		ED11F9F326BA58BC0061F2B4 /* HelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersTests.swift; sourceTree = "<group>"; };
+		ED11F9F526BA58F90061F2B4 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
+		ED11F9F826BA597D0061F2B4 /* MockedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedResponse.swift; sourceTree = "<group>"; };
+		ED11F9FA26BA59910061F2B4 /* MockingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingRequest.swift; sourceTree = "<group>"; };
+		ED11F9FD26BA5B0E0061F2B4 /* WebPostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPostRepositoryTests.swift; sourceTree = "<group>"; };
+		ED11F9FF26BA5E980061F2B4 /* DBPostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPostRepositoryTests.swift; sourceTree = "<group>"; };
+		ED11FA0226BA5EEE0061F2B4 /* MockedPersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPersistentStore.swift; sourceTree = "<group>"; };
+		ED11FA0426BA5F1E0061F2B4 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		ED6008C626B8414200ACBEE1 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -216,6 +234,42 @@
 				ED11F9EC26B9945B0061F2B4 /* CoreDataStackTests.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		ED11F9F026BA583D0061F2B4 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				ED11F9F126BA584E0061F2B4 /* LazyListTests.swift */,
+				ED11F9F326BA58BC0061F2B4 /* HelpersTests.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		ED11F9F726BA59590061F2B4 /* NetworkMocking */ = {
+			isa = PBXGroup;
+			children = (
+				ED11F9F826BA597D0061F2B4 /* MockedResponse.swift */,
+				ED11F9FA26BA59910061F2B4 /* MockingRequest.swift */,
+			);
+			path = NetworkMocking;
+			sourceTree = "<group>";
+		};
+		ED11F9FC26BA5AE50061F2B4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ED11F9FD26BA5B0E0061F2B4 /* WebPostRepositoryTests.swift */,
+				ED11F9FF26BA5E980061F2B4 /* DBPostRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ED11FA0126BA5EDC0061F2B4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				ED11FA0426BA5F1E0061F2B4 /* Mock.swift */,
+				ED11FA0226BA5EEE0061F2B4 /* MockedPersistentStore.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		ED6008C526B8412D00ACBEE1 /* BaseElements */ = {
@@ -433,10 +487,14 @@
 		ED6447C526B7BBBC00403A4C /* PostAppMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED11FA0126BA5EDC0061F2B4 /* Mock */,
+				ED11F9FC26BA5AE50061F2B4 /* Repositories */,
+				ED11F9F026BA583D0061F2B4 /* Utilites */,
 				ED11F9EB26B9943C0061F2B4 /* Persistence */,
 				ED6447C626B7BBBC00403A4C /* PostAppMVVMTests.swift */,
 				ED6447C826B7BBBC00403A4C /* Info.plist */,
 				ED11F9EE26B994D40061F2B4 /* TestHelpers.swift */,
+				ED11F9F726BA59590061F2B4 /* NetworkMocking */,
 			);
 			path = PostAppMVVMTests;
 			sourceTree = "<group>";
@@ -528,6 +586,7 @@
 				ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */,
 				ED6008F826B868FF00ACBEE1 /* ProcessInfo+Extension.swift */,
 				ED60095B26B9523000ACBEE1 /* Array+Extension.swift */,
+				ED11F9F526BA58F90061F2B4 /* Result+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -679,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED11F9F626BA58F90061F2B4 /* Result+Extension.swift in Sources */,
 				ED6008C926B8421000ACBEE1 /* PostListViewModelProtocol.swift in Sources */,
 				ED6008EF26B8682C00ACBEE1 /* DBPostRepository.swift in Sources */,
 				ED6008D026B85D8B00ACBEE1 /* PostDetailViewModelProtocol.swift in Sources */,
@@ -754,8 +814,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED11FA0526BA5F1E0061F2B4 /* Mock.swift in Sources */,
 				ED6447C726B7BBBC00403A4C /* PostAppMVVMTests.swift in Sources */,
+				ED11FA0326BA5EEE0061F2B4 /* MockedPersistentStore.swift in Sources */,
+				ED11F9F226BA584E0061F2B4 /* LazyListTests.swift in Sources */,
 				ED11F9ED26B9945B0061F2B4 /* CoreDataStackTests.swift in Sources */,
+				ED11FA0026BA5E980061F2B4 /* DBPostRepositoryTests.swift in Sources */,
+				ED11F9FB26BA59910061F2B4 /* MockingRequest.swift in Sources */,
+				ED11F9F926BA597D0061F2B4 /* MockedResponse.swift in Sources */,
+				ED11F9F426BA58BC0061F2B4 /* HelpersTests.swift in Sources */,
+				ED11F9FE26BA5B0E0061F2B4 /* WebPostRepositoryTests.swift in Sources */,
 				ED11F9EF26B994D40061F2B4 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,12 +7,18 @@
 
 import Foundation
 
-struct FullPost: Codable, Equatable, Identifiable {
+struct FullPost: Codable, Identifiable {
     let userId: Int64
     let id: Int64
     var title: String?
     var body: String?
     var userInfo: UserInfo?
+}
+
+extension FullPost: Equatable {
+    static func ==(lhs: Self, rhs: Self) -> Bool {
+        return lhs.id == rhs.id && lhs.userId == rhs.userId
+    }
 }
 
 extension FullPost {

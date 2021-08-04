@@ -14,6 +14,7 @@ struct AppEnvironment {
 
 enum BaseURL: String {
     case jsonPlaceholder = "https://jsonplaceholder.typicode.com"
+    case test = "https://test.com"
 }
 
 extension AppEnvironment {

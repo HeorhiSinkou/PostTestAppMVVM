@@ -11,14 +11,20 @@ struct RootCoordinatorView: View {
     // MARK: - Stored Properties
 
     @ObservedObject var coordinator: RootCoordinator
+    private let isRunningTests: Bool
+
+    init(coordinator: RootCoordinator) {
+        self.coordinator = coordinator
+        self.isRunningTests = ProcessInfo.processInfo.isRunningTests
+    }
 
     var body: some View {
-        PostCoordinatorView(coordinator: coordinator.postCoordinator)
+        Group {
+            if isRunningTests {
+                Text("Unit test running")
+            } else {
+                PostCoordinatorView(coordinator: coordinator.postCoordinator)
+            }
+        }
     }
 }
-
-//struct RootCoordinatorView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RootCoordinatorView()
-//    }
-//}
