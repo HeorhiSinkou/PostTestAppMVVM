@@ -15,7 +15,7 @@ final class PostListViewModel: BaseViewModel<PostListViewModelState, PostListVie
     let title: String
     @Published var isRefreshing: Bool = false
     @Published var isShowingAlert: Bool = false
-    private unowned let coordinator: PostCoordinator
+    private unowned let coordinator: PostCoordinatorType
     let interactor: PostListInteractor
     private var loadedPosts: LazyList<FullPost>?
     private var needRefresh: Bool = false
@@ -24,7 +24,7 @@ final class PostListViewModel: BaseViewModel<PostListViewModelState, PostListVie
 
     init(title: String,
          interactor: PostListInteractor,
-         coordinator: PostCoordinator
+         coordinator: PostCoordinatorType
     ) {
         self.title = title
         self.interactor = interactor

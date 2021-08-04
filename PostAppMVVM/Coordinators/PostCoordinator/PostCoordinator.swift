@@ -7,7 +7,13 @@
 
 import SwiftUI
 
-class PostCoordinator: ObservableObject, Identifiable {
+protocol PostCoordinatorType: AnyObject {
+    func open(_ post: FullPost)
+}
+
+class PostCoordinator: ObservableObject,
+                       Identifiable,
+                       PostCoordinatorType {
 
     // MARK: Stored Properties
 

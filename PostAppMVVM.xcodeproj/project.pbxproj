@@ -18,6 +18,12 @@
 		ED11FA0026BA5E980061F2B4 /* DBPostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11F9FF26BA5E980061F2B4 /* DBPostRepositoryTests.swift */; };
 		ED11FA0326BA5EEE0061F2B4 /* MockedPersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0226BA5EEE0061F2B4 /* MockedPersistentStore.swift */; };
 		ED11FA0526BA5F1E0061F2B4 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0426BA5F1E0061F2B4 /* Mock.swift */; };
+		ED11FA0726BA6C0B0061F2B4 /* MockedWebRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0626BA6C0B0061F2B4 /* MockedWebRepositories.swift */; };
+		ED11FA0926BA6E8E0061F2B4 /* MockedDBRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0826BA6E8E0061F2B4 /* MockedDBRepositories.swift */; };
+		ED11FA0B26BA78470061F2B4 /* MockedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0A26BA78470061F2B4 /* MockedInteractor.swift */; };
+		ED11FA0E26BA7B560061F2B4 /* PostListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0D26BA7B560061F2B4 /* PostListInteractorTest.swift */; };
+		ED11FA1126BA88470061F2B4 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1026BA88470061F2B4 /* PostListViewModelTests.swift */; };
+		ED11FA1326BA8A920061F2B4 /* MockedCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1226BA8A920061F2B4 /* MockedCoordinators.swift */; };
 		ED6008C426B8410100ACBEE1 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */; };
 		ED6008C726B8414200ACBEE1 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C626B8414200ACBEE1 /* Feedback.swift */; };
 		ED6008C926B8421000ACBEE1 /* PostListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */; };
@@ -122,6 +128,12 @@
 		ED11F9FF26BA5E980061F2B4 /* DBPostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPostRepositoryTests.swift; sourceTree = "<group>"; };
 		ED11FA0226BA5EEE0061F2B4 /* MockedPersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPersistentStore.swift; sourceTree = "<group>"; };
 		ED11FA0426BA5F1E0061F2B4 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		ED11FA0626BA6C0B0061F2B4 /* MockedWebRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedWebRepositories.swift; sourceTree = "<group>"; };
+		ED11FA0826BA6E8E0061F2B4 /* MockedDBRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDBRepositories.swift; sourceTree = "<group>"; };
+		ED11FA0A26BA78470061F2B4 /* MockedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedInteractor.swift; sourceTree = "<group>"; };
+		ED11FA0D26BA7B560061F2B4 /* PostListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListInteractorTest.swift; sourceTree = "<group>"; };
+		ED11FA1026BA88470061F2B4 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
+		ED11FA1226BA8A920061F2B4 /* MockedCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCoordinators.swift; sourceTree = "<group>"; };
 		ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		ED6008C626B8414200ACBEE1 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -268,8 +280,28 @@
 			children = (
 				ED11FA0426BA5F1E0061F2B4 /* Mock.swift */,
 				ED11FA0226BA5EEE0061F2B4 /* MockedPersistentStore.swift */,
+				ED11FA0626BA6C0B0061F2B4 /* MockedWebRepositories.swift */,
+				ED11FA0826BA6E8E0061F2B4 /* MockedDBRepositories.swift */,
+				ED11FA0A26BA78470061F2B4 /* MockedInteractor.swift */,
+				ED11FA1226BA8A920061F2B4 /* MockedCoordinators.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		ED11FA0C26BA7B1C0061F2B4 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				ED11FA0D26BA7B560061F2B4 /* PostListInteractorTest.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		ED11FA0F26BA88310061F2B4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ED11FA1026BA88470061F2B4 /* PostListViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		ED6008C526B8412D00ACBEE1 /* BaseElements */ = {
@@ -487,6 +519,8 @@
 		ED6447C526B7BBBC00403A4C /* PostAppMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED11FA0F26BA88310061F2B4 /* ViewModels */,
+				ED11FA0C26BA7B1C0061F2B4 /* Interactors */,
 				ED11FA0126BA5EDC0061F2B4 /* Mock */,
 				ED11F9FC26BA5AE50061F2B4 /* Repositories */,
 				ED11F9F026BA583D0061F2B4 /* Utilites */,
@@ -815,9 +849,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED11FA0526BA5F1E0061F2B4 /* Mock.swift in Sources */,
+				ED11FA0E26BA7B560061F2B4 /* PostListInteractorTest.swift in Sources */,
+				ED11FA0B26BA78470061F2B4 /* MockedInteractor.swift in Sources */,
+				ED11FA1326BA8A920061F2B4 /* MockedCoordinators.swift in Sources */,
 				ED6447C726B7BBBC00403A4C /* PostAppMVVMTests.swift in Sources */,
+				ED11FA0926BA6E8E0061F2B4 /* MockedDBRepositories.swift in Sources */,
 				ED11FA0326BA5EEE0061F2B4 /* MockedPersistentStore.swift in Sources */,
+				ED11FA0726BA6C0B0061F2B4 /* MockedWebRepositories.swift in Sources */,
 				ED11F9F226BA584E0061F2B4 /* LazyListTests.swift in Sources */,
+				ED11FA1126BA88470061F2B4 /* PostListViewModelTests.swift in Sources */,
 				ED11F9ED26B9945B0061F2B4 /* CoreDataStackTests.swift in Sources */,
 				ED11FA0026BA5E980061F2B4 /* DBPostRepositoryTests.swift in Sources */,
 				ED11F9FB26BA59910061F2B4 /* MockingRequest.swift in Sources */,
