@@ -24,6 +24,11 @@
 		ED11FA0E26BA7B560061F2B4 /* PostListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA0D26BA7B560061F2B4 /* PostListInteractorTest.swift */; };
 		ED11FA1126BA88470061F2B4 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1026BA88470061F2B4 /* PostListViewModelTests.swift */; };
 		ED11FA1326BA8A920061F2B4 /* MockedCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1226BA8A920061F2B4 /* MockedCoordinators.swift */; };
+		ED11FA1526BAD1970061F2B4 /* AddressMO+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1426BAD1970061F2B4 /* AddressMO+Extension.swift */; };
+		ED11FA1826BAD1E00061F2B4 /* UserInfoMO+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1726BAD1E00061F2B4 /* UserInfoMO+Extension.swift */; };
+		ED11FA1A26BAD21A0061F2B4 /* GeoMO+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1926BAD21A0061F2B4 /* GeoMO+Extension.swift */; };
+		ED11FA1C26BAD2490061F2B4 /* FullPostMO+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1B26BAD2490061F2B4 /* FullPostMO+Extension.swift */; };
+		ED11FA1E26BAD2800061F2B4 /* CompanyMO+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11FA1D26BAD2800061F2B4 /* CompanyMO+Extension.swift */; };
 		ED6008C426B8410100ACBEE1 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */; };
 		ED6008C726B8414200ACBEE1 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C626B8414200ACBEE1 /* Feedback.swift */; };
 		ED6008C926B8421000ACBEE1 /* PostListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */; };
@@ -83,7 +88,6 @@
 		ED6447B026B7BBBA00403A4C /* PostAppMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6447AF26B7BBBA00403A4C /* PostAppMVVMApp.swift */; };
 		ED6447B426B7BBBC00403A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6447B326B7BBBC00403A4C /* Assets.xcassets */; };
 		ED6447B726B7BBBC00403A4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6447B626B7BBBC00403A4C /* Preview Assets.xcassets */; };
-		ED6447C726B7BBBC00403A4C /* PostAppMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6447C626B7BBBC00403A4C /* PostAppMVVMTests.swift */; };
 		ED6447D226B7BBBC00403A4C /* PostAppMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6447D126B7BBBC00403A4C /* PostAppMVVMUITests.swift */; };
 		ED6447E426B7BCD100403A4C /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6447E326B7BCD100403A4C /* RootCoordinator.swift */; };
 		ED6447E726B7BD9600403A4C /* PostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6447E626B7BD9600403A4C /* PostCoordinator.swift */; };
@@ -134,6 +138,11 @@
 		ED11FA0D26BA7B560061F2B4 /* PostListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListInteractorTest.swift; sourceTree = "<group>"; };
 		ED11FA1026BA88470061F2B4 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
 		ED11FA1226BA8A920061F2B4 /* MockedCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCoordinators.swift; sourceTree = "<group>"; };
+		ED11FA1426BAD1970061F2B4 /* AddressMO+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressMO+Extension.swift"; sourceTree = "<group>"; };
+		ED11FA1726BAD1E00061F2B4 /* UserInfoMO+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfoMO+Extension.swift"; sourceTree = "<group>"; };
+		ED11FA1926BAD21A0061F2B4 /* GeoMO+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeoMO+Extension.swift"; sourceTree = "<group>"; };
+		ED11FA1B26BAD2490061F2B4 /* FullPostMO+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FullPostMO+Extension.swift"; sourceTree = "<group>"; };
+		ED11FA1D26BAD2800061F2B4 /* CompanyMO+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompanyMO+Extension.swift"; sourceTree = "<group>"; };
 		ED6008C326B8410100ACBEE1 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		ED6008C626B8414200ACBEE1 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		ED6008C826B8421000ACBEE1 /* PostListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -195,7 +204,6 @@
 		ED6447B626B7BBBC00403A4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED6447BD26B7BBBC00403A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6447C226B7BBBC00403A4C /* PostAppMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostAppMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED6447C626B7BBBC00403A4C /* PostAppMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAppMVVMTests.swift; sourceTree = "<group>"; };
 		ED6447C826B7BBBC00403A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6447CD26B7BBBC00403A4C /* PostAppMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostAppMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6447D126B7BBBC00403A4C /* PostAppMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAppMVVMUITests.swift; sourceTree = "<group>"; };
@@ -302,6 +310,18 @@
 				ED11FA1026BA88470061F2B4 /* PostListViewModelTests.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED11FA1626BAD1C20061F2B4 /* CoreDataMO+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED11FA1426BAD1970061F2B4 /* AddressMO+Extension.swift */,
+				ED11FA1726BAD1E00061F2B4 /* UserInfoMO+Extension.swift */,
+				ED11FA1926BAD21A0061F2B4 /* GeoMO+Extension.swift */,
+				ED11FA1B26BAD2490061F2B4 /* FullPostMO+Extension.swift */,
+				ED11FA1D26BAD2800061F2B4 /* CompanyMO+Extension.swift */,
+			);
+			path = "CoreDataMO+Extensions";
 			sourceTree = "<group>";
 		};
 		ED6008C526B8412D00ACBEE1 /* BaseElements */ = {
@@ -453,6 +473,7 @@
 				ED60093F26B872EE00ACBEE1 /* GeoMO+CoreDataProperties.swift */,
 				ED60093A26B872EE00ACBEE1 /* UserInfoMO+CoreDataClass.swift */,
 				ED60094026B872EE00ACBEE1 /* UserInfoMO+CoreDataProperties.swift */,
+				ED11FA1626BAD1C20061F2B4 /* CoreDataMO+Extensions */,
 			);
 			path = CoreDataMo;
 			sourceTree = "<group>";
@@ -525,7 +546,6 @@
 				ED11F9FC26BA5AE50061F2B4 /* Repositories */,
 				ED11F9F026BA583D0061F2B4 /* Utilites */,
 				ED11F9EB26B9943C0061F2B4 /* Persistence */,
-				ED6447C626B7BBBC00403A4C /* PostAppMVVMTests.swift */,
 				ED6447C826B7BBBC00403A4C /* Info.plist */,
 				ED11F9EE26B994D40061F2B4 /* TestHelpers.swift */,
 				ED11F9F726BA59590061F2B4 /* NetworkMocking */,
@@ -779,6 +799,7 @@
 				ED60091326B86C5B00ACBEE1 /* DIContainer.swift in Sources */,
 				ED6008CB26B84E5300ACBEE1 /* BaseViewModel.swift in Sources */,
 				ED60094526B872EE00ACBEE1 /* AddressMO+CoreDataClass.swift in Sources */,
+				ED11FA1A26BAD21A0061F2B4 /* GeoMO+Extension.swift in Sources */,
 				ED60095026B8733200ACBEE1 /* PostContainer.swift in Sources */,
 				ED60090D26B86B6100ACBEE1 /* PullToRefresh.swift in Sources */,
 				ED6447EC26B7BFC000403A4C /* PostCoordinatorView.swift in Sources */,
@@ -801,6 +822,7 @@
 				ED6447E726B7BD9600403A4C /* PostCoordinator.swift in Sources */,
 				ED60094626B872EE00ACBEE1 /* FullPostMO+CoreDataProperties.swift in Sources */,
 				ED60094826B872EE00ACBEE1 /* GeoMO+CoreDataClass.swift in Sources */,
+				ED11FA1C26BAD2490061F2B4 /* FullPostMO+Extension.swift in Sources */,
 				ED6447FB26B7C61700403A4C /* URL+Extension.swift in Sources */,
 				ED6447F726B7C2FA00403A4C /* PostDetailViewModel.swift in Sources */,
 				ED6008F726B868CB00ACBEE1 /* WebUserRepository.swift in Sources */,
@@ -827,13 +849,16 @@
 				ED6008EB26B8678F00ACBEE1 /* FullPost.swift in Sources */,
 				ED6447B026B7BBBA00403A4C /* PostAppMVVMApp.swift in Sources */,
 				ED60090426B86A3C00ACBEE1 /* LazyList.swift in Sources */,
+				ED11FA1E26BAD2800061F2B4 /* CompanyMO+Extension.swift in Sources */,
 				ED6447F426B7C0A400403A4C /* Identifiable+Extension.swift in Sources */,
 				ED60091926B86D2800ACBEE1 /* PostListInteractor.swift in Sources */,
+				ED11FA1826BAD1E00061F2B4 /* UserInfoMO+Extension.swift in Sources */,
 				ED60094A26B872EE00ACBEE1 /* UserInfoMO+CoreDataProperties.swift in Sources */,
 				ED6008E726B8675A00ACBEE1 /* Address.swift in Sources */,
 				ED6008DA26B8666D00ACBEE1 /* AsyncImage.swift in Sources */,
 				ED60090626B86A8000ACBEE1 /* NetworkingHelpers.swift in Sources */,
 				ED60090826B86AEE00ACBEE1 /* ImageLoader.swift in Sources */,
+				ED11FA1526BAD1970061F2B4 /* AddressMO+Extension.swift in Sources */,
 				ED60095226B8734A00ACBEE1 /* UserDataView.swift in Sources */,
 				ED6008DC26B8669200ACBEE1 /* MailView.swift in Sources */,
 				ED60094426B872EE00ACBEE1 /* UserInfoMO+CoreDataClass.swift in Sources */,
@@ -852,7 +877,6 @@
 				ED11FA0E26BA7B560061F2B4 /* PostListInteractorTest.swift in Sources */,
 				ED11FA0B26BA78470061F2B4 /* MockedInteractor.swift in Sources */,
 				ED11FA1326BA8A920061F2B4 /* MockedCoordinators.swift in Sources */,
-				ED6447C726B7BBBC00403A4C /* PostAppMVVMTests.swift in Sources */,
 				ED11FA0926BA6E8E0061F2B4 /* MockedDBRepositories.swift in Sources */,
 				ED11FA0326BA5EEE0061F2B4 /* MockedPersistentStore.swift in Sources */,
 				ED11FA0726BA6C0B0061F2B4 /* MockedWebRepositories.swift in Sources */,
@@ -1015,7 +1039,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PostAppMVVM/Preview Content\"";
-				DEVELOPMENT_TEAM = TZB8934TZT;
+				DEVELOPMENT_TEAM = F6D489CQWV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PostAppMVVM/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1037,7 +1061,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PostAppMVVM/Preview Content\"";
-				DEVELOPMENT_TEAM = TZB8934TZT;
+				DEVELOPMENT_TEAM = F6D489CQWV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PostAppMVVM/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
