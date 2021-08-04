@@ -60,7 +60,7 @@ struct RealPostDetailInteractor: PostDetailInteractor {
     }
 
     private var requestHoldBackTimeInterval: TimeInterval {
-        return ProcessInfo.processInfo.isRunningTests ? 0 : 0.5
+        return ProcessInfo.processInfo.isRunningTests ? 0 : 15
     }
 }
 

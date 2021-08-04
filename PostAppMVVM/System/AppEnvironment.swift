@@ -33,10 +33,10 @@ extension AppEnvironment {
 
     private static func configuredURLSession() -> URLSession {
         let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 60
-        configuration.timeoutIntervalForResource = 120
+        configuration.timeoutIntervalForRequest = 10
+        configuration.timeoutIntervalForResource = 10
         configuration.waitsForConnectivity = true
-        configuration.httpMaximumConnectionsPerHost = 5
+        configuration.httpMaximumConnectionsPerHost = 2
         configuration.requestCachePolicy = .returnCacheDataElseLoad
         configuration.urlCache = .shared
         return URLSession(configuration: configuration)

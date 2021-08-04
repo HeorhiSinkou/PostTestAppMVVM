@@ -36,8 +36,8 @@
 	<dict>
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
-		<key>UIColorName</key>
-		<string>background-color</string>
+		<key>UIImageName</key>
+		<string>submarine</string>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
