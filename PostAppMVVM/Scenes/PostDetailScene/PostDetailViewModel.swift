@@ -11,20 +11,19 @@ import Combine
 class PostDetailViewModel: BaseViewModel<PostDetailViewModelState, PostDetailViewModelEvent>,
                            PostDetailViewModelProtocol {
     // MARK: - Stored Properties
-    private unowned let coordinator: PostCoordinator
-    private var post: FullPost
-    @State var isRefreshing: Bool = false
+    @Published var post: FullPost
+    @Published var isRefreshing: Bool = false
     @Published var isShowingAlert: Bool = false
     let interactor: PostDetailInteractor
 
     // MARK: - Initialization
 
-    init(post: FullPost,
-         interactor: PostDetailInteractor,
-         coordinator: PostCoordinator) {
+    init(
+        post: FullPost,
+        interactor: PostDetailInteractor
+    ) {
         self.post = post
         self.interactor = interactor
-        self.coordinator = coordinator
         super.init(state: .loaded(post))
     }
 
@@ -32,6 +31,10 @@ class PostDetailViewModel: BaseViewModel<PostDetailViewModelState, PostDetailVie
 
     func reloadPost() {
 
+    }
+
+    func updateWith(post: FullPost) {
+        self.post = post
     }
 
     // MARK: - Override base object methods
@@ -76,13 +79,13 @@ class PostDetailViewModel: BaseViewModel<PostDetailViewModelState, PostDetailVie
             return self
                 .interactor
                 .reloadPost(postId: self.post.id)
-                .map ({ post in
-                    self.post = post
-                    self.isRefreshing = false
+                .map ({ [weak self] post in
+                    self?.post = post
+                    self?.isRefreshing = false
                     return PostDetailViewModelEvent.onPostLoaded(post)
                 })
-                .catch { failure -> Just<PostDetailViewModelEvent> in
-                    self.isShowingAlert = true
+                .catch { [weak self] failure -> Just<PostDetailViewModelEvent> in
+                    self?.isShowingAlert = true
                     return Just(PostDetailViewModelEvent.onFailedToLoadPost(failure))
                 }
                 .eraseToAnyPublisher()

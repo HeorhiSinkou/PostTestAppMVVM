@@ -9,11 +9,7 @@ import SwiftUI
 
 struct PostCoordinatorView: View {
     // MARK: - Stored Properties
-    @ObservedObject var coordinator: PostCoordinator
-
-    init(coordinator: PostCoordinator) {
-        self.coordinator = coordinator
-    }
+    @StateObject var coordinator: PostCoordinator
 
     var body: some View {
         NavigationView {
@@ -33,5 +29,4 @@ struct PostCoordinatorView: View {
     private func postListView() -> some View {
         return PostListView(viewModel: coordinator.postListViewModel)
     }
-
 }

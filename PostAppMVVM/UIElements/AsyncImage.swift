@@ -14,10 +14,11 @@ struct AsyncImage<Placeholder: View>: View {
 
     init(
         url: URL?,
+        cache: ImageCache,
         @ViewBuilder placeholder: () -> Placeholder
     ) {
         self.placeholder = placeholder()
-        _loader = StateObject(wrappedValue: ImageLoader(url: url, cache: Environment(\.imageCache).wrappedValue))
+        _loader = StateObject(wrappedValue: ImageLoader(url: url, cache: cache))
     }
 
     var body: some View {
@@ -27,8 +28,8 @@ struct AsyncImage<Placeholder: View>: View {
 
     private var content: some View {
         Group {
-            if loader.image != nil {
-                Image(uiImage: loader.image!)
+            if let image = loader.image {
+                Image(uiImage: image)
                     .resizable()
             } else {
                 placeholder

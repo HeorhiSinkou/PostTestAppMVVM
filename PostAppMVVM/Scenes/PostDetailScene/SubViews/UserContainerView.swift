@@ -9,6 +9,7 @@ import Combine
 import SwiftUI
 
 struct UserContainer: View {
+    @Environment(\.imageCache) var imageCache: ImageCache
     let id: Int64
     enum Constants {
         static let baseURL = "https://source.unsplash.com/collection/542909/?sig="
@@ -19,6 +20,7 @@ struct UserContainer: View {
         VStack {
             AsyncImage(
                 url: makeImageURL(),
+                cache: imageCache,
                 placeholder: { Text("Loading...")
                     .scaledToFit()
                     .lineLimit(1)

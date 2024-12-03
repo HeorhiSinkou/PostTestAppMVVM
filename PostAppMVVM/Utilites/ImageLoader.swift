@@ -17,7 +17,10 @@ class ImageLoader: ObservableObject {
     private var cache: ImageCache?
     private static let imageProcessingQueue = DispatchQueue(label: "image-processing")
 
-    init(url: URL?, cache: ImageCache? = nil) {
+    init(
+        url: URL?,
+        cache: ImageCache? = nil
+    ) {
         self.url = url
         self.cache = cache
     }
@@ -39,7 +42,6 @@ class ImageLoader: ObservableObject {
             .subscribe(on: Self.imageProcessingQueue)
             .map { UIImage(data: $0.data) }
             .replaceError(with: nil)
-            // 3.
             .handleEvents(receiveSubscription: { [weak self] _ in self?.onStart() },
                           receiveOutput: { [weak self] in self?.cache($0, url: url) },
                           receiveCompletion: { [weak self] _ in self?.onFinish() },
@@ -61,7 +63,7 @@ class ImageLoader: ObservableObject {
     }
 
     private func cache(_ image: UIImage?, url: URL) {
-        image.map { cache?[url] = $0 }
+        image.map { cache?.set(image: $0, for: url) }
     }
 }
 

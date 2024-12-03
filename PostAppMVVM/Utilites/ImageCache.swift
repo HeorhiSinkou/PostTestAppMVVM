@@ -9,7 +9,9 @@ import UIKit
 import SwiftUI
 
 protocol ImageCache {
-    subscript(_ url: URL) -> UIImage? { get set }
+    subscript(_ url: URL) -> UIImage? { get }
+
+    func set(image: UIImage, for key: URL)
 }
 
 struct TemporaryImageCache: ImageCache {
@@ -17,7 +19,10 @@ struct TemporaryImageCache: ImageCache {
 
     subscript(_ key: URL) -> UIImage? {
         get { cache.object(forKey: key as NSURL) }
-        set { newValue == nil ? cache.removeObject(forKey: key as NSURL) : cache.setObject(newValue!, forKey: key as NSURL) }
+    }
+
+    func set(image: UIImage, for key: URL) {
+        cache.setObject(image, forKey: key as NSURL)
     }
 }
 

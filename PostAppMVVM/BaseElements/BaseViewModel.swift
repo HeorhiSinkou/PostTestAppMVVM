@@ -20,13 +20,13 @@ class BaseViewModel<State, Event>: ObservableObject {
         Publishers.system(
             initial: state,
             reduce: self.reduce,
-            scheduler: RunLoop.main,
+            scheduler: DispatchQueue.main,
             feedbacks: [
                 self.whenLoading(),
                 self.userInput(input: input.eraseToAnyPublisher())
             ]
         )
-        .assign(to: \.state, on: self)
+        .weakAssign(to: \.state, on: self)
         .store(in: &bag)
     }
 

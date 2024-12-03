@@ -9,15 +9,15 @@ import SwiftUI
 
 struct PostDetailView: View {
     // MARK: Stored Properties
-    @ObservedObject var viewModel: PostDetailViewModel
+    @StateObject var viewModel: PostDetailViewModel
     @State private(set) var isShowingMailView = false
 
     var body: some View {
         Group {
             self.content
                 .listStyle(PlainListStyle())
-                .ignoresSafeArea()
                 .background(Color.gray.opacity(0.2))
+                .ignoresSafeArea(.all, edges: .bottom)
                 .pullToRefresh(isShowing: $viewModel.isRefreshing) {
                     self.viewModel.send(event: .reloadPost(afterError: false))
                 }

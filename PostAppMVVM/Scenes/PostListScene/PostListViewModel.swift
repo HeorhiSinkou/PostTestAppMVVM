@@ -91,12 +91,12 @@ final class PostListViewModel: BaseViewModel<PostListViewModelState, PostListVie
             return
                 self.interactor
                 .fetchPosts(with: refresh)
-                .map ({ posts in
-                        self.loadedPosts = posts
-                        self.isRefreshing = false
+                .map ({ [weak self] posts in
+                        self?.loadedPosts = posts
+                        self?.isRefreshing = false
                         return PostListViewModelEvent.onPostsLoaded(posts) })
-                .catch { failure -> Just<PostListViewModelEvent> in
-                    self.isShowingAlert = true
+                .catch { [weak self] failure -> Just<PostListViewModelEvent> in
+                    self?.isShowingAlert = true
                     return Just(PostListViewModelEvent.onFailedToLoadPosts(failure))
                 }
                 .eraseToAnyPublisher()

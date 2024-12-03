@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostListView: View {
     // MARK: - Stored Properties
-    @ObservedObject var viewModel: PostListViewModel
+    @StateObject var viewModel: PostListViewModel
 
     var body: some View {
         Group {

@@ -41,9 +41,16 @@ class PostCoordinator: ObservableObject,
     // MARK: Methods
 
     func open(_ post: FullPost) {
-        self.postDetailViewModel = PostDetailViewModel(post: post,
-                                                       interactor: injected.interactors.postDetailInteractor,
-                                                       coordinator: self)
+        guard
+            let postDetailViewModel
+        else {
+            self.postDetailViewModel = PostDetailViewModel(
+                post: post,
+                interactor: injected.interactors.postDetailInteractor
+            )
+            return
+        }
+        postDetailViewModel.updateWith(post: post)
     }
 
     func open(_ url: URL) {

@@ -16,6 +16,7 @@ struct PostAppMVVMApp: App {
         WindowGroup {
             RootCoordinatorView(coordinator: coordinator)
                 .inject(coordinator.container)
+                .environment(\.imageCache, ImageCacheKey.defaultValue)
         }
     }
 }
